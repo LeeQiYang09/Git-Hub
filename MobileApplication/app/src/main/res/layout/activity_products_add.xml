@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Products_Add">
+
+    <TextView
+        android:id="@+id/apProductText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Add New Product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/apReturnButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/apConfirmButton"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <Button
+        android:id="@+id/apConfirmButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="confirm"
+        app:layout_constraintEnd_toStartOf="@+id/apReturnButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apProductText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/apProductIDText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Product ID (auto generated): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/apProductIDBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/apProductIDText"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/apProductNameText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Product Name: "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apProductIDText" />
+
+            <EditText
+                android:id="@+id/apProductNameBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/apProductIDText"
+                app:layout_constraintTop_toBottomOf="@+id/apProductIDBox"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/apManufactureDateText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="42dp"
+                android:gravity="center_vertical"
+                android:text="Manufacture Date: "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apProductNameText" />
+
+            <DatePicker
+                android:id="@+id/apManufactureDateBox"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toEndOf="@+id/apManufactureDateText"
+                app:layout_constraintTop_toBottomOf="@+id/apProductNameBox" />
+
+
+            <TextView
+                android:id="@+id/apExpiryDateText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="42dp"
+                android:gravity="center_vertical"
+                android:text="Expiry Date: "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apManufactureDateBox" />
+
+            <DatePicker
+                android:id="@+id/apExpiryDateBox"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toEndOf="@+id/apManufactureDateText"
+                app:layout_constraintTop_toBottomOf="@+id/apManufactureDateBox" />
+
+            <TextView
+                android:id="@+id/apCompanyText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Company: "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apExpiryDateBox" />
+
+            <EditText
+                android:id="@+id/apCompanyBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/apCompanyText"
+                app:layout_constraintTop_toBottomOf="@+id/apExpiryDateBox"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/apSerialNumberText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Serial Number:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apCompanyText" />
+
+            <EditText
+                android:id="@+id/apSerialNumberBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/apCompanyText"
+                app:layout_constraintTop_toBottomOf="@+id/apCompanyBox"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/apCategoryText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Category: "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apSerialNumberText" />
+
+            <Spinner
+                android:id="@+id/apCategoryBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/apCategoryText"
+                app:layout_constraintTop_toBottomOf="@+id/apSerialNumberBox"
+                tools:ignore="SpeakableTextPresentCheck" />/>
+
+            <TextView
+                android:id="@+id/apQRCodeText"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="88dp"
+                android:gravity="center_vertical"
+                android:text="QR Code:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apCategoryText" />
+
+            <ImageView
+                android:id="@+id/apQRCodeImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toEndOf="@+id/apQRCodeText"
+                app:layout_constraintTop_toBottomOf="@+id/apCategoryBox"
+                app:srcCompat="@drawable/qrinstruct" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

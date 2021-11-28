@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.intertech.fyp.mobileapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_products"
+            app:destination="@id/nav_products" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_transactions"
+            app:destination="@id/nav_transactions" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_devices"
+            app:destination="@id/nav_devices" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.intertech.fyp.mobileapplication.ui.products.ProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_nav_products_to_nav_productDetails"
+            app:destination="@id/nav_productDetails"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.intertech.fyp.mobileapplication.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_product_details" />
+
+    <fragment
+        android:id="@+id/nav_productDetails"
+        android:name="com.intertech.fyp.mobileapplication.ui.products.ProductDetailsFragment"
+        android:label="ProductDetails"
+        tools:layout="@layout/fragment_product_details" />
+
+    <fragment
+        android:id="@+id/nav_transactions"
+        android:name="com.intertech.fyp.mobileapplication.ui.transactions.TransactionsFragment"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transactions" >
+        <action
+            android:id="@+id/action_nav_transactions_to_nav_transactionsDetails"
+            app:destination="@id/nav_transactionsDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transactionsDetails"
+        android:name="com.intertech.fyp.mobileapplication.ui.transactions.TransactionDetailsFragment"
+        android:label="Transactions Details"
+        tools:layout="@layout/fragment_transaction_details" />
+
+    <fragment
+        android:id="@+id/nav_devices"
+        android:name="com.intertech.fyp.mobileapplication.ui.devices.DevicesFragment"
+        android:label="Devices"
+        tools:layout="@layout/fragment_devices" >
+        <action
+            android:id="@+id/action_nav_devices_to_nav_map"
+            app:destination="@id/nav_map"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.intertech.fyp.mobileapplication.ui.map.MapsFragment"
+        android:label="Devices"
+        tools:layout="@layout/fragment_maps">
+
+        <argument
+            android:name = "coord"
+            app:argType="string"
+            android:defaultValue="0.00, 0.00">
+        </argument>
+    </fragment>
+
+</navigation>

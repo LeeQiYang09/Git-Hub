@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.devices.DevicesFragment">
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deviceTrackButton">
+
+        <TableLayout
+            android:id="@+id/devicesTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500">
+
+                <TextView
+                    android:id="@+id/deviceID"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Device"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/deviceDate"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="10"
+                    android:width="150dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Date Time"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/deviceSafety"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="4"
+                    android:padding="10dp"
+                    android:text="Safe"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/deviceTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="10"
+                    android:padding="10dp"
+                    android:text="Temperature (deg C)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/deviceHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="10"
+                    android:padding="10dp"
+                    android:text="Humidity (%)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/deviceCoordinate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="10"
+                    android:padding="10dp"
+                    android:text="Coordinate (lat, lng)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/deviceTrackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:text="track all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.transactions.TransactionDetailsFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tdTransactionIDText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:text="Transaction ID"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tdTransactionIDBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="ID"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdTransactionIDText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tdDeviceIDText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Device ID: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdTransactionIDBox" />
+
+            <TextView
+                android:id="@+id/tdDeviceIDBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Device ID"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tdDeviceIDText"
+                app:layout_constraintTop_toBottomOf="@+id/tdTransactionIDBox" />
+
+            <TextView
+                android:id="@+id/tdPickupAddressText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Pick Up Address:"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdDeviceIDBox" />
+
+            <TextView
+                android:id="@+id/tdPickupAddressBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Date"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdPickupAddressText"
+                app:layout_constraintTop_toBottomOf="@+id/tdDeviceIDBox" />
+
+            <TextView
+                android:id="@+id/tdProductIDText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Expiry Date:"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdPickupAddressBox" />
+
+            <TextView
+                android:id="@+id/tdProductIDBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Date"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tdProductIDText"
+                app:layout_constraintTop_toBottomOf="@+id/tdPickupAddressBox" />
+
+            <TextView
+                android:id="@+id/tdCourierText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Courier ID: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdProductIDBox" />
+
+            <TextView
+                android:id="@+id/tdCourierBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="courier id"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdCourierText"
+                app:layout_constraintTop_toBottomOf="@+id/tdProductIDBox" />
+
+            <TextView
+                android:id="@+id/tdPickedupText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Picked Up: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdCourierBox" />
+
+            <TextView
+                android:id="@+id/tdPickedupBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Yes or No"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdPickedupText"
+                app:layout_constraintTop_toBottomOf="@+id/tdCourierBox" />
+
+            <TextView
+                android:id="@+id/tdReceiverIDText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Receiver ID: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdPickedupBox" />
+
+            <TextView
+                android:id="@+id/tdReceiverIDBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="receiver id"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdReceiverIDText"
+                app:layout_constraintTop_toBottomOf="@+id/tdPickedupBox" />
+
+            <TextView
+                android:id="@+id/tdDeliveryAddressText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Receiver Address: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdReceiverIDBox" />
+
+            <TextView
+                android:id="@+id/tdDeliveryAddressBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="address"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdDeliveryAddressText"
+                app:layout_constraintTop_toBottomOf="@+id/tdReceiverIDBox" />
+
+            <TextView
+                android:id="@+id/tdGPSText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="GPS coordinate: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdDeliveryAddressBox" />
+
+            <TextView
+                android:id="@+id/tdGPSBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="0.00, 0.00"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdGPSText"
+                app:layout_constraintTop_toBottomOf="@+id/tdDeliveryAddressBox" />
+
+            <TextView
+                android:id="@+id/tdDeliveredText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Delivered: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdGPSBox" />
+
+            <TextView
+                android:id="@+id/tdDeliveredBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Yes or No"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdDeliveredText"
+                app:layout_constraintTop_toBottomOf="@+id/tdGPSBox" />
+
+            <TextView
+                android:id="@+id/tdDeliveryFundsText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Funds (RM): "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tdDeliveredBox" />
+
+            <TextView
+                android:id="@+id/tdDeliveryFundsBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="0.00"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tdDeliveryFundsText"
+                app:layout_constraintTop_toBottomOf="@+id/tdDeliveredBox" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
