@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.intertech.fyp.mobileapplicationreceiver.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_transactions"
+            app:destination="@id/nav_transactions" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_scanQR"
+            app:destination="@id/nav_scanQR" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_transactionsDetails"
+            app:destination="@id/nav_transactionsDetails" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_productDetails"
+            app:destination="@id/nav_productDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transactions"
+        android:name="com.intertech.fyp.mobileapplicationreceiver.ui.transactions.TransactionsFragment"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transactions" >
+        <action
+            android:id="@+id/action_nav_transactions_to_nav_maps"
+            app:destination="@id/nav_maps" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transactionsDetails"
+        android:name="com.intertech.fyp.mobileapplicationreceiver.ui.transactions.TransactionDetailsFragment"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transaction_details" />
+
+    <fragment
+        android:id="@+id/nav_productDetails"
+        android:name="com.intertech.fyp.mobileapplicationreceiver.ui.products.ProductDetailFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_product_detail" />
+
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="com.intertech.fyp.mobileapplicationreceiver.ui.map.MapsFragment"
+        android:label = "Maps"
+        tools:layout="@layout/fragment_maps">
+        <argument
+            android:name = "coord"
+            app:argType="string"
+            android:defaultValue="0.00, 0.00">
+        </argument>
+    </fragment>
+
+    <activity
+        android:id="@+id/nav_scanQR"
+        android:name="com.intertech.fyp.mobileapplicationreceiver.ScanQR"
+        android:label="Scan QR"
+        tools:layout="@layout/activity_scan_qr"
+        />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.intertech.fyp.mobileapplicationreceiver.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

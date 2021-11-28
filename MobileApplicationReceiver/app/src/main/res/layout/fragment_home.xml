@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Active Transactions" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addProductsButton"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/homeTransactionTableLayout">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/purple_500">
+
+                        <TextView
+                            android:id="@+id/homeTransactionsID"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:text="Transactions ID"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/homeReceiverID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10"
+                            android:padding="10dp"
+                            android:text="Sender"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/homeTransactionsProductID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10"
+                            android:padding="10dp"
+                            android:text="Product ID"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/homeCourierID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10"
+                            android:padding="10dp"
+                            android:text="Courier"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/homePickedUp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10"
+                            android:padding="10dp"
+                            android:text="Pick Up"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/homeDeliveredStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10"
+                            android:padding="10dp"
+                            android:text="Delivered"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Products" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addProductsButton"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/homeProductTableLayout">
+
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/purple_500">
+
+                        <TextView
+                            android:id="@+id/homeProductID"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:text="Product ID"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+
+                        <TextView
+                            android:id="@+id/homeProductName"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10"
+                            android:width="150dp"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/homeExpiryDate"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:padding="10dp"
+                            android:text="Expiry Date"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/homeCompany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="10"
+                            android:padding="10dp"
+                            android:text="Company"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

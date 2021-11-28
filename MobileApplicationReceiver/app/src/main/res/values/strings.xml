@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Mobile Application Receiver</string>
+    <string name="title_activity_acc_receiver">Acc_Receiver</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Reserved names for table row -->
+    <item name="reservedNamedId" type="id" />
+    <item name="TransactionReservedNames" type="id" />
+
+    !-- Resources for spinner -->
+    <string-array name="user_roles">
+        <item>Please choose one</item>
+        <item>Sender</item>
+        <item>Courier</item>
+        <item>Receiver</item>
+    </string-array>
+    <string-array name="product_categories">
+        <item>Please choose one</item>
+        <item>Medicine</item>
+        <item>HVT</item>
+        <item>Non-Edibles</item>
+    </string-array>
+    <string-array name="default_spinner_item">
+        <item>Please choose one</item>
+    </string-array>
+
+    <!-- Text Size -->
+    <dimen name="font_size_small">10sp</dimen>
+    <dimen name="font_size_medium">18sp</dimen>
+    <dimen name="font_size_large">26sp</dimen>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

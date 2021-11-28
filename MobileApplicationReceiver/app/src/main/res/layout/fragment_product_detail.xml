@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.products.ProductDetailFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productDetailsProductIDText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:text="Product ID"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/productDetailsProductIDBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="ID"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productDetailsProductIDText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/productDetailsProductNameText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Item: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsProductIDBox" />
+
+            <TextView
+                android:id="@+id/productDetailsProductNameBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Item Name"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/productDetailsProductNameText"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsProductIDBox" />
+
+            <TextView
+                android:id="@+id/productDetailsManDateText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Manufacture Date:"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsProductNameBox" />
+
+            <TextView
+                android:id="@+id/productDetailsManDateBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Date"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productDetailsManDateText"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsProductNameBox" />
+
+            <TextView
+                android:id="@+id/productDetailsExpDateText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Expiry Date:"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsManDateBox" />
+
+            <TextView
+                android:id="@+id/productDetailsExpDateBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Date"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/productDetailsExpDateText"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsManDateBox" />
+
+            <TextView
+                android:id="@+id/productDetailsCompanyText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Manufacturer: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsExpDateBox" />
+
+            <TextView
+                android:id="@+id/productDetailsCompanyBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Company"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productDetailsCompanyText"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsExpDateBox" />
+
+            <TextView
+                android:id="@+id/productDetailsSerialNumberText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Serial Number: "
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsCompanyBox" />
+
+            <TextView
+                android:id="@+id/productDetailsSerialNumberBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Serial Number"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productDetailsSerialNumberText"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsCompanyBox" />
+
+            <TextView
+                android:id="@+id/productDetailsCategoryText"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:text="Category"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsSerialNumberBox" />
+
+            <TextView
+                android:id="@+id/productDetailsCategoryBox"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:text="Category"
+                android:textSize="@dimen/font_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productDetailsCategoryText"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsSerialNumberBox" />
+
+            <ImageView
+                android:id="@+id/productDetailsQRCode"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDetailsCategoryBox"
+                app:srcCompat="@drawable/qrinstruct" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

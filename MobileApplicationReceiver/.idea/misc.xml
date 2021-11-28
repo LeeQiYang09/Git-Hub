@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.1" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/activity_acc_receiver.xml" value="0.33" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/activity_registration.xml" value="0.1" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/activity_scan_qr.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/app_bar_acc_receiver.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/content_acc_receiver.xml" value="0.1" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_home.xml" value="0.3862433862433862" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_maps.xml" value="0.5" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_product_detail.xml" value="0.2871376811594203" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_profile.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_scanqr.xml" value="0.1" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_tracking.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_transaction_details.xml" value="0.33" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/fragment_transactions.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/layout/nav_header_acc_receiver.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/menu/acc__receiver.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/Bla/Documents/Programing/Java/MobileApplicationReceiver/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
